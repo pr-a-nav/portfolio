@@ -1,16 +1,48 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgb(10, 25, 47);
+  font-family: "Ubuntu", sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.dark-bg {
+  background-color: rgb(10, 25, 47);
 }
 
-* {
-  box-sizing: border-box;
+.light-bg {
+  background-color: rgb(17, 34, 64);
+}
+
+.primary-color {
+  color: rgb(100, 255, 218);
+}
+
+.hover-primary-color:hover {
+  color: rgb(100, 255, 218);
+}
+
+.primary-border {
+  border-color: rgb(100, 255, 218);
+}
+
+.bright-white {
+  color: rgb(204, 214, 246);
+}
+
+.dull-white {
+  color: rgb(136, 146, 176);
+}
+.hr-color {
+  color: rgb(35, 53, 84);
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(10, 25, 47, 0.1);
+}
+
+.sidebar-container {
+  background-color: rgba(10, 25, 47, 0.9);
 }
