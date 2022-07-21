@@ -34,6 +34,9 @@ body {
 .dull-white {
   color: rgb(136, 146, 176);
 }
+.dull-bg {
+  background-color: rgb(136, 146, 176);
+}
 .hr-color {
   color: rgb(35, 53, 84);
 }

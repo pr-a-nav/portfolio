@@ -5,6 +5,8 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
+import LeftStickyBar from "../components/LeftStickyBar";
+import RightStickyBar from "../components/RightStickyBar";
 import Technologies from "../components/Technologies";
 
 export default function Home() {
@@ -18,10 +20,16 @@ export default function Home() {
 
       <main>
         <Header />
-        <Intro />
-        <About />
-        <Technologies />
-        <Contact />
+        <LeftStickyBar />
+        <RightStickyBar />
+        <div className="lg:flex lg:justify-center">
+          <div className="lg:max-w-4xl">
+            <Intro />
+            <About />
+            <Technologies />
+            <Contact />
+          </div>
+        </div>
       </main>
     </div>
   );

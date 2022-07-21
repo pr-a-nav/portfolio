@@ -73,7 +73,33 @@ const Header = () => {
       )}
 
       {/* Desktop Nav */}
-      <div className="bg-blue-500 hidden lg:flex"></div>
+      <div className="hidden lg:flex w-full justify-between px-10 py-2">
+        {/* left section */}
+        <div
+          className="w-10 h-10 justify-center items-center flex p-2
+          primary-border rounded-full border-2 cursor-pointer select-none"
+        >
+          <a href="/">
+            <p className="primary-color text-3xl">P</p>
+          </a>
+        </div>
+
+        {/* right section */}
+
+        <div className="flex px-5 space-x-10">
+          <ul className="flex space-x-10 dull-white text-lg">
+            <li className="hover-primary-color">
+              <a href="#about">About</a>
+            </li>
+            <li className="hover-primary-color">
+              <a href="#techno">Technologies</a>
+            </li>
+            <li className="hover-primary-color">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       {/* ........................................... */}
     </div>
